@@ -11,9 +11,9 @@ COPY . /app
 #RUN chmod +x ./start.sh
 #RUN chmod +x ./wait-for-it.sh
 
-RUN mvn -v
+#RUN mvn -v
 
-#RUN mvn clean install -DskipTests
+RUN mvn clean install -DskipTests
 
 EXPOSE 8080
 
