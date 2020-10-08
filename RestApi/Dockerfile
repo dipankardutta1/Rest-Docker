@@ -19,7 +19,7 @@ EXPOSE 8080
 
 RUN ls -a
 
-COPY --from=maven ./target/RestApi-0.0.1-SNAPSHOT.jar RestApi-0.0.1-SNAPSHOT.jar
+COPY target/RestApi-0.0.1-SNAPSHOT.jar RestApi-0.0.1-SNAPSHOT.jar
 
 #ENTRYPOINT ["./start.sh"]
 
