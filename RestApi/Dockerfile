@@ -19,8 +19,8 @@ EXPOSE 8080
 
 
 
-ADD ./target/RestApi-0.0.1-SNAPSHOT.jar RestApi-0.0.1-SNAPSHOT.jar
-
+#ADD ./target/RestApi-0.0.1-SNAPSHOT.jar RestApi-0.0.1-SNAPSHOT.jar
+ADD /root/.m2/repository/com/example/RestApi/0.0.1-SNAPSHOT/RestApi-0.0.1-SNAPSHOT.jar RestApi-0.0.1-SNAPSHOT.jar 
 
 #ENTRYPOINT ["./start.sh"]
 
