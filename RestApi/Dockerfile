@@ -19,7 +19,7 @@ EXPOSE 8080
 
 RUN ls -a
 
-COPY target/RestApi-0.0.1-SNAPSHOT.jar RestApi-0.0.1-SNAPSHOT.jar
+COPY /app/target/RestApi-0.0.1-SNAPSHOT.jar RestApi-0.0.1-SNAPSHOT.jar
 
 #ENTRYPOINT ["./start.sh"]
 
