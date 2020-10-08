@@ -6,7 +6,7 @@ MAINTAINER Dipankar Dutta
 WORKDIR /app
 
 
-COPY ./app
+COPY . /app
 
 #RUN chmod +x ./start.sh
 #RUN chmod +x ./wait-for-it.sh
